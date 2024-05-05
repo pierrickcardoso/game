@@ -1,11 +1,17 @@
 # game
 
-Here are some game i made using pygame zero 
-To run them make sur you have pygamezero install
-If encounter any bug make an issue 
-The code is not documented 
+Here are some game i made using pygame zero  
+You fill find the game at the .exe format in Exefile   
 
-The game is also at the .exe format might be some bug 
+And the Py file in PyFile
+Py part:       
+  To run them make sur you have pygamezero install   
+  If encounter any bug make an issue with how you "create" the bug   
+  The code is not documented  
+
+Exe part :
+I'm using pyinstaller to make the .py into .exe    
+I'm not used to it so can still containt error please report them
 
 Here a short description of the game :   
   Minesweeper : a bacis minesweeper game with 40 bomb out of a 16*16 map   
