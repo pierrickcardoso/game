@@ -5,6 +5,8 @@ To run them make sur you have pygamezero install
 If encounter any bug make an issue 
 The code is not documented 
 
+The game is also at the .exe format might be some bug 
+
 Here a short description of the game :   
   Minesweeper : a bacis minesweeper game with 40 bomb out of a 16*16 map   
   Tic_tac_toe : the basic tic_tac_toe with victory cheking include   
