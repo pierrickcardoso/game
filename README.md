@@ -3,13 +3,13 @@
 Here are some game i made using pygame zero  
 You fill find the game at the .exe format in Exefile   
 
-And the Py file in PyFile
+And the Py file in PyFile   
 Py part:       
   To run them make sur you have pygamezero install   
   If encounter any bug make an issue with how you "create" the bug   
   The code is not documented  
 
-Exe part :
+Exe part :   
 I'm using pyinstaller to make the .py into .exe    
 I'm not used to it so can still containt error please report them
 
