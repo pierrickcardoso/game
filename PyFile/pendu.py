@@ -1,4 +1,3 @@
-#import pgzrun
 from random import *
 import sys
 import time
@@ -106,20 +105,6 @@ def formatage(liste):
 	for i in liste:
 		mot=mot+i
 	return mot
-#parti graphique"
-"""WIDTH   = CELLULE*DIMENSION+20
-HEIGHT  = CELLULE*DIMENSION+20
-TITLE   = "DEMINEUR"
-elapsed_time_at_pause = 0
-LARGEUR = WIDTH  // CELLULE
-HAUTEUR = HEIGHT // CELLULE
 
-
-def update():
-def draw():
-def on_mouse_down(pos):
-
-
-pgzrun.go()"""
 jeux(mot)
     
