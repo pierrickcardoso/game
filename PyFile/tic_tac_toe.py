@@ -31,12 +31,13 @@ class Jeux:
 		return False
 	def a_jouer(self,i,j):
 		if self.en_cours:
-			if self.turn%2==0 and self.map[i][j]==[]:
+			if self.turn%2==0 and self.map[i][j]==[] and not self.map[i][j]=="O":
 				self.map[i][j]="X"
+				self.turn+=1
 			else:
-				if self.map[i][j]==[]:
+				if self.map[i][j]==[]  and not self.map[i][j]=="X":
 					self.map[i][j]="O"
-			self.turn+=1
+					self.turn+=1
 
 	def get_turn(self):
 		return self.turn==9	
