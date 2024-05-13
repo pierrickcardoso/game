@@ -19,4 +19,3 @@ Here a short description of the game :
   Dodger : a 2 player game where your goal is too avoid the red rectangle   
   Upgrade_tic_tac_toe : a tic tac toe game where you are limited to 3 form once you place your 4th the first disapeare    
   pendu : a game where you need to find a word by seing his lenght and guessing the letter need to be use in the terminal or in an IDE that feature one word are in french work in the shell of window    
-  Tic_tac_toe_ia : A solo tic_tac_toe with an "ia" might be bug
