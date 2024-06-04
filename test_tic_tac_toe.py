@@ -1,4 +1,5 @@
 
+
 import pgzrun
 from random import randint
 CELLULE = 50
@@ -119,27 +120,36 @@ def meuilleur_coup(matrice):
             meuilleur_coup.append([1,1])
         if  matrice[1][1] == matrice[2][2]=="X" :
             meuilleur_coup.append([0,0])
+        if matrice[0][2] == matrice[1][1] =="X" :
+            meuilleur_coup.append([2,0])
+        if  matrice[2][0] == matrice[0][2]=="X" :
+            meuilleur_coup.append([1,1])
+        if  matrice[2][0] == matrice[1][1]=="X" :
+            meuilleur_coup.append([0,2])
+        coup_gagnat=[]
         for i in range (3):
             if matrice[i][0]==matrice[i][1]=="O" :
-                meuilleur_coup.append([i,2]) 
+                coup_gagnat.append([i,2]) 
             if matrice[i][1] == matrice[i][2]=="O" :
-                meuilleur_coup.append([i,0]) 
+                coup_gagnat.append([i,0]) 
             if matrice[i][0] == matrice[i][2]=="O" :
-                meuilleur_coup.append([i,1]) 
+                coup_gagnat.append([i,1]) 
         for i in range (3):
             if matrice[0][i]==matrice[1][i]=="O" :
-                meuilleur_coup.append([2,i]) 
+                coup_gagnat.append([2,i]) 
             if matrice[1][i] == matrice[2][i]=="O" :
-                meuilleur_coup.append([0,i]) 
+                coup_gagnat.append([0,i]) 
             if matrice[0][i] == matrice[2][i]=="O" :
-                meuilleur_coup.append([1,i]) 
+                coup_gagnat.append([1,i]) 
         if matrice[0][0] == matrice[1][1] =="O" :
-            meuilleur_coup.append([2,2])
+            coup_gagnat.append([2,2])
         if  matrice[0][0] == matrice[2][2]=="O" :
-            meuilleur_coup.append([1,1])
+            coup_gagnat.append([1,1])
         if  matrice[1][1] == matrice[2][2]=="O" :
-            meuilleur_coup.append([0,0])
-        
+            coup_gagnat.append([0,0])
+        for i in coup_gagnat:
+            if jeux.est_vide(i[0],i[1]):
+                return [i[0],i[1]]
         coup=most_frequent(meuilleur_coup)
         for i in meuilleur_coup:
             if jeux.est_vide(i[0],i[1]):
