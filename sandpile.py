@@ -58,13 +58,10 @@ def ecoulement(tableau):
 TABLEAU=generation(DIMENSION)
 def draw():
 	draw_map(TABLEAU)
-iteration=0
 def update():
 	global TABLEAU,iteration
 	if not is_finish(TABLEAU):
 		TABLEAU=ecoulement(TABLEAU)
-		iteration+=1
-	print(iteration)
 def draw_map(tableau):
 	for i in range(len(tableau)):
 		for j in range(len(tableau)):
