@@ -1,14 +1,15 @@
 
 import pgzrun
 # U can edit this
-DIMENSION=512
-COLOR_FOR_0='red'
-COLOR_FOR_1='yellow'
-COLOR_FOR_2='green'
-COLOR_FOR_3='blue'
-WIDTH   = 1024
-HEIGHT  = 1024
-AMOUNT_TO_START=2**20
+# fir dimension n width and eight i recommend using power of 2 big dimension mean longer time to render 
+DIMENSION=128 # DIMENSION <= HEIGT 
+COLOR_FOR_0='white'
+COLOR_FOR_1='brown'
+COLOR_FOR_2='orange'
+COLOR_FOR_3='pink' 
+WIDTH   = 512 # WITDH = HEIGT
+HEIGHT  = 512
+AMOUNT_TO_START=2**20 # If they are still black put a higher value
 
 #STOP HERE
 CELLULE=WIDTH//DIMENSION
@@ -57,11 +58,13 @@ def ecoulement(tableau):
 TABLEAU=generation(DIMENSION)
 def draw():
 	draw_map(TABLEAU)
+iteration=0
 def update():
-	global TABLEAU
+	global TABLEAU,iteration
 	if not is_finish(TABLEAU):
 		TABLEAU=ecoulement(TABLEAU)
-
+		iteration+=1
+	print(iteration)
 def draw_map(tableau):
 	for i in range(len(tableau)):
 		for j in range(len(tableau)):
