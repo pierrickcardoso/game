@@ -1,7 +1,7 @@
 
 import pgzrun
 # U can edit this
-# fir dimension n width and eight i recommend using power of 2 big dimension mean longer time to render 
+# for dimension n width and eight i recommend using power of 2 big dimension mean longer time to render 
 DIMENSION=128 # DIMENSION <= HEIGT 
 COLOR_FOR_0='white'
 COLOR_FOR_1='brown'
